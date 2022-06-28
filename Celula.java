@@ -1,7 +1,6 @@
-package br.ifba.edu.basica;
+package Empresa;
 
 public class Celula {
-
 	private Celula proxima;
 	private Object objeto;
 	
@@ -37,3 +36,5 @@ public class Celula {
 
 	
 }
+
+

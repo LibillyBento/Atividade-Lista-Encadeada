@@ -1,49 +1,50 @@
-package br.ifba.edu.principal;
+package Empresa;
 
 import javax.swing.JOptionPane;
-
-import br.ifba.edu.lista.Lista;
 
 public class Principal {
 
 	public static void main(String[] args) {
 
-		Lista lista = new Lista();
+		ListaSimples lista = new ListaSimples();
 		
-		lista.adicionaNoComeco("Líbilly");
-		lista.adicionaNoComeco("Igor");
-		lista.adicionaNoComeco("Geovana");
-		lista.adicionaNoComeco("Cícero");
-		lista.adicionaNoComeco("Lucas");
-		lista.adicionaNoComeco("Clara");
-		lista.adicionaNoComeco("Mateus");
-		lista.adicionaNoComeco("Edilson");
-		lista.adicionaNoComeco("Mayan");
-		lista.adicionaNoComeco("Alícia");
-		
-		System.out.println(lista.toString());
-		
-		lista.adicionaNoFinal("Jimin");
-		lista.adicionaNoFinal("Jungkook");
-		lista.adicionaNoFinal("Jin");
-		lista.adicionaNoFinal("J-HOPE");
-		lista.adicionaNoFinal("Alícia");
+		lista.adicionaNoInicio("Líbilly");
+		lista.adicionaNoInicio("Igor");
+		lista.adicionaNoInicio("Geovana");
+		lista.adicionaNoInicio("Cícero");
+		lista.adicionaNoInicio("Lucas");
+		lista.adicionaNoInicio("Clara");
+		lista.adicionaNoInicio("Mateus");
+		lista.adicionaNoInicio("Edilson");
+		lista.adicionaNoInicio("Mayan");
+		lista.adicionaNoInicio("Alícia");
 		
 		System.out.println(lista.toString());
 		
-		lista.adicionaPorPosicao(22, "RM" );
+		lista.adicionaNoFim("Jimin");
+		lista.adicionaNoFim("Jungkook");
+		lista.adicionaNoFim("Jin");
+		lista.adicionaNoFim("J-HOPE");
+		lista.adicionaNoFim("Suga");
+		lista.adicionaNoFim("Alícia");
 		
 		System.out.println(lista.toString());
 		
-		lista.removerDoComeco();
+		lista.adicionaPorPosicao(2, "RM" );
 		
-		JOptionPane.showMessageDialog(null, null);
-		
-		lista.removePPorsicao(3);
 		System.out.println(lista.toString());
 		
 		lista.removeDoFim();
 		System.out.println(lista.toString());
+		
+		lista.removePorPorsicao(3);
+		System.out.println(lista.toString());
+		
+		lista.removerDoInicio();
+		System.out.println(lista.toString());
+		
+		JOptionPane.showMessageDialog(null, null);
+
 	}
 
 }
