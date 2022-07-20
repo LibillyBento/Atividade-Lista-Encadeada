@@ -19,9 +19,9 @@ public class ListaSimples {
 		this.totalElementos++;
 
 	}
-	
+
 	public void adicionaNoFim(Object obj) {
-		
+
 		if(this.totalElementos == 0) {
 			this.adicionaNoInicio(obj);
 		} else {
@@ -31,34 +31,34 @@ public class ListaSimples {
 			this.totalElementos++;
 		}
 	}
-	
+
 	public void adicionaPorPosicao(int posicao, Object obj) {
-		
+
 		if(posicao == 0) {
 			this.adicionaNoInicio(obj);
 		}else if (posicao == this.totalElementos) {
 			this.adicionaNoFim(obj);	
 		}
-		
+
 		 if (posicao > this.totalElementos) {
 			 JOptionPane.showMessageDialog(null, "Não existe essa posição");
-			 
+
 		}else {
-	
+
 		Celula anterior = this.cabeca;
-		
+
 		for(int cont = 0; cont < posicao - 1; cont++) {
 			 anterior = anterior.getProxima();
-			 
+
 		}
-		
+
 		Celula nova = new Celula(anterior.getProxima(), obj);
 		anterior.setProxima(nova);
 		this.totalElementos++;
-		
+
 	}
 }
-	
+
 	public void removerDoInicio() {
 		Celula aux = this.cabeca;
 		this.cabeca = this.cabeca.getProxima();
