@@ -3,9 +3,9 @@ package Empresa;
 public class Celula {
 	private Celula proxima;
 	private Object objeto;
-	
+
 	public Celula() {
-		
+
 	}
 
 	public Celula(Celula proxima, Object object) {
@@ -13,7 +13,7 @@ public class Celula {
 		this.proxima = proxima;
 		this.objeto = object;
 	}
-	
+
 	public Celula(Object objeto) {
 		this.objeto = objeto;
 	}
@@ -34,7 +34,4 @@ public class Celula {
 		this.objeto = objeto;
 	}
 
-	
 }
-
-

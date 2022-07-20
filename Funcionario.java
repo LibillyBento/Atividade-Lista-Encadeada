@@ -5,9 +5,9 @@ public class Funcionario {
 	private int rg;
 	private int cpf;
 	private int idade;
-	
+
 	public Funcionario() {
-		
+
 	}
 
 	public Funcionario(String nome, int rg, int cpf, int idade) {
@@ -47,6 +47,10 @@ public class Funcionario {
 
 	public void setIdade(int idade) {
 		this.idade = idade;
+	}
+
+	public String toString() {
+		return ("Dados do Funcionario - Nome: " + nome + ", Rg: " + rg + ", Cpf: " + cpf + ", Idade: " + idade +"\"");
 	}
 
 }
